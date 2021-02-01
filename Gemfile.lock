@@ -1,0 +1,17 @@
+PATH
+  remote: .
+  specs:
+    yael (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  yael!
+
+BUNDLED WITH
+   2.0.2
