@@ -55,7 +55,7 @@ bundle install
 Generate a migration for your database:
 
 ```ruby
-rails generate yeal:install
+rails generate yael:install
 rails db:migrate
 ```
 
