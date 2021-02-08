@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Event based Rails with ActiveJob"
   spec.description   = "Yael is Yet Another Event Library based on top of ActiveJob. It helps you dispatching events asynchronously in your code base and react to them just like routing in Rails."
-  spec.homepage      = "https://nerdgeschoss.de"
+  spec.homepage      = "https://github.com/nerdgeschoss/yael"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 

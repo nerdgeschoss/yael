@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    yael (0.0.1)
+    yael (0.0.2)
 
 GEM
   remote: https://rubygems.org/
