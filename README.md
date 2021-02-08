@@ -19,12 +19,12 @@ class Order < ApplicationRecord
   include Yael::Publisher
 
   def confirm_order
-    publish :order_confirmed, ip: some_id, some_other_data: data
+    publish :order_confirmed, order_id: self.id, some_other_data: data
   end
 end
 
 class Slack
-  def self.on_order_confirmed(ip:)
+  def self.on_order_confirmed(order_id:)
     # send a notification to slack
   end
 end
