@@ -9,8 +9,8 @@ module Yael
       @target = target
       @queue = queue
       @delay = delay
-      @target_name = target.split("#").first.classify
-      @target_method = target.split("#").second
+      @target_name = target.split(".").first.classify
+      @target_method = target.split(".").second
     end
 
     def matches?(stream)
