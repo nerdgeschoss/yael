@@ -7,7 +7,7 @@ Define your routes in `config/events.rb` like this:
 
 ```ruby
 Yael::Bus.shared.routing do
-  dispatch :order_confirmed, to: "order_mailer#confirm", delay: 5.minutes, queue: :low_priority
+  dispatch :order_confirmed, to: "order_mailer.confirm", delay: 5.minutes, queue: :low_priority
   dispatch :order_confirmed, to: "slack"
 end
 ```
