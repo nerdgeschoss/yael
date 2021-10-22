@@ -22,7 +22,7 @@ module Yael
     def dispatch(event)
       method = target_method || "on_#{event.name}"
       args = event.payload.symbolize_keys
-      ExecutionJob.set(queue: queue, wait: delay).perform_later(target_name, method, args)
+      ExecutionJob.set(queue: queue, wait: delay).perform_later(target_name, method, event.stream, args)
     end
 
     private
